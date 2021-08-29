@@ -1,0 +1,8 @@
+.border-h1 {
+    color: crimson;
+    border-style: dashed;
+    border: 4px solid;
+    border-color: cornflowerblue;
+    /*width: fit-content;
+    height:auto;*/
+}
