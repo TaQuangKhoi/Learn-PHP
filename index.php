@@ -7,12 +7,16 @@
 
 <body>
 
-    <?php
-    echo $_SERVER['HTTP_USER_AGENT'];
-    ?>
+    <?php echo $_SERVER['HTTP_USER_AGENT'] ?>
 
     <div>
-        <?php phpinfo(); ?>
+        <?php
+        if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Firefox')) {
+            echo 'You are using Firefox.';
+        } else {
+            echo 'You are not using Firefox.';
+        }
+        ?>
     </div>
 
 </body>
