@@ -9,7 +9,12 @@
     
     <body>
         <div class="border-h1">
-            <h1>Kote</h1>
+            <h1>
+                Kote
+                <?php
+                echo "My first PHP script!";
+                ?>
+            </h1>
         </div>
         <div>
             <h2>About</h2>
