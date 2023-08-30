@@ -9,15 +9,19 @@
 
     <?php echo $_SERVER['HTTP_USER_AGENT'] ?>
 
-    <div>
-        <?php
-        if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Firefox')) {
-            echo 'You are using Firefox.';
-        } else {
-            echo 'You are not using Firefox.';
-        }
-        ?>
-    </div>
+    <?php
+    if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Firefox')) {
+    ?>
+        <h3>str_contains() returned true</h3>
+        <p>You are using Firefox</p>
+    <?php
+    } else {
+    ?>
+        <h3>str_contains() returned false</h3>
+        <p>You are not using Firefox</p>
+    <?php
+    }
+    ?>
 
 </body>
 
