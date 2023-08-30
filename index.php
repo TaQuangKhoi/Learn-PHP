@@ -7,9 +7,11 @@
 
 <body>
 
-    <?php
-    echo "My first PHP script!";
-    ?>
+    <?php echo '<p>Hello World</p>'; ?>
+
+    <div>
+        <?php phpinfo(); ?>
+    </div>
 
 </body>
 
